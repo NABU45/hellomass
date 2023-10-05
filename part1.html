@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <title>japrelline</title>
+    <link rel="stylesheet" href="./past1.css">
+
+</head>
+<body>
+    <!--------nav-bar section------------------------------>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#Features">Features</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+            </ul>
+            <h1 class="logo-title"><span class="logo-first-latter" style="  margin-bottom: -0.9rem;">J</span>aprelline</h1>
+        </div>
+    </nav>
+    
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+          <h1 class="main-title" id="home">Don't say i'm a perfact man</h1>
+          <p>Learning is never done without error and defalt</p>
+          <a href="" class="btn btn-primary">Menu</a>
+        </div>
+      </section>
+      <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">About Us</p>
+          <h2>"It's not a bug. it's an audocumented feature! </h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+            eos omnis, nobis dignissimos perferendis et officia architecto,
+            fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+            maiores praesentium soluta alias asperiores saepe commodi
+            consequatur? Perferendis est placeat facere aspernatur!
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="../html/R.jpg" alt="programmer" />
+        </div>
+      </div>
+    </section>
+    <!-----------------///Core teams////-->
+    <section id="teams">
+        <h2>Developer teams</h2>
+        <div class="teams container">
+          <div class="teams-type">
+            <div class="img-container">
+              <img class="teams-image" src="../html/IMG_20211021_180629 - Copy.jpg" alt="error" />
+              <div class="img-content">
+                <h3>Nabin Japrel</h3>
+                <a
+                  href="https://facebook.com"
+                  class="btn btn-primary"
+                  target="blank"
+                  >learn more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="teams-type">
+            <div class="img-container">
+              <img class="teams-image" src="../html/IMG_2482.JPG" alt="error" />
+              <div class="img-content">
+                <h3>Tek Saud</h3>
+                <a
+                  href="https://facebook.com"
+                  class="btn btn-primary"
+                  target="blank"
+                  >learn more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="teams-type hari">
+            <div class="img-container">
+              <img class="teams-image" src="../html/received_822159535662859-01.jpeg" alt="error" />
+              <div class="img-content">
+                <h3>Harina Watson</h3>
+                <a
+                  href="https://facebook.com"
+                  class="btn btn-primary"
+                  target="blank"
+                  >learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+    </script>
+</body>
+</html>
