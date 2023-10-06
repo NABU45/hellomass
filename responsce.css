@@ -114,16 +114,11 @@
       font-size: 1.6rem;
   }
 
-  .testimonial-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .food-menu-container img {
+  .gallery-menu-container img {
     margin: auto;
   }
 
-  .food-menu-item {
+  .gallery-menu-item {
     flex-direction: column;
     text-align: center;
   }
@@ -155,37 +150,92 @@
     font-weight: 500;
   }
 }
+/* -------//core----teams /// -----*/
 
-.teams-container {
-  flex-direction: column;
-  align-items: stretch;
+
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+
+  .navbar .menu-items li{
+      font-size: 1.6rem;
+  }
+  .teams-type:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  
+  .teams-type {
+    box-shadow: 5px 5px 10px 0 #aaa;
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .img-container {
+    margin: 0;
+  }
+.teams-container
+{
+  display: block;
+  margin: auto;
 }
+  .teams-type {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .teams-image{
+    width: 100%;
+    height: 100%;
+  }
 
-.teams-type:not(:last-child) {
-  margin-bottom: 3rem;
+  .gallery-menu-container img {
+    margin: auto;
+  }
+
+  .gallery-menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .logo-title {
+    position: absolute;
+    top: 06px;
+    right: 15px;
+    font-size: 3rem;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 }
-
-.teams-type {
-  box-shadow: 5px 5px 10px 0 #aaa;
-}
-
-.teams-image {
-  margin: 0;
-}
-
 @media (min-width: 769px) and (max-width: 1200px) {
-  .teams-image h3 {
+  .img-container h3 {
     font-size: 1.5rem;
   }
 
-  .teams-image .btn {
+  .img-container .btn {
     font-size: 0.7rem;
   }
 }
-
 @media (orientation: landscape) and (max-height: 500px) {
   .showcase-area {
     height: 50vmax;
   }
 }
-
